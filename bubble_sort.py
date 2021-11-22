@@ -11,16 +11,13 @@ print(array)
 
 def bubble_sort():
     for index in range(len(array)):
-        print(index, array[index])
         if index > 0:
             if array[index - 1] < array[index]:
                 i = array[index]
                 i2 = array[index - 1]
                 array[index] = i2
                 array[index - 1] = i
-                print('Sorted:', index, 'Value:', array[index], 'To:', array[index - 1])
+                print('Sorted index:', index, 'Value:', array[index-1], 'With:', array[index])
     print(array)
-    for index in range(len(array)):
-        print('Result: ', index, array[index])
 
 bubble_sort()
