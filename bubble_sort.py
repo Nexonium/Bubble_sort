@@ -1,5 +1,5 @@
-# Bubble sort v.0.4
-# Made by the greatest programmer of all time
+# Bubble sort v.0.5
+# Made by 'NOT' the greatest programmer of all time
 
 array = list()
 array_length = int(input("Please enter array length: \n"))
@@ -11,6 +11,7 @@ print(array)
 
 def bubble_sort():
     for index in range(len(array)):
+        f = 0
         for index in range(len(array)):
             if index > 0:
                 if array[index - 1] < array[index]:
@@ -19,6 +20,8 @@ def bubble_sort():
                     array[index] = i2
                     array[index - 1] = i
                     print('Sorted index:', index, 'Value:', array[index-1], 'With:', array[index])
-    print(array)
+                    f = 1
+        if f == 0:
+            return
 
 bubble_sort()
