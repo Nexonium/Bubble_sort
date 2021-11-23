@@ -22,6 +22,7 @@ def bubble_sort():
                     print('Sorted index:', index, 'Value:', array[index-1], 'With:', array[index])
                     f = 1
         if f == 0:
+            print(array)
             return
 
 bubble_sort()
